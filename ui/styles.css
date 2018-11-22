@@ -1,0 +1,111 @@
+html,
+body {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #112f41;
+  line-height: 36px;
+}
+
+button {
+  line-height: 40px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+button.primary {
+  color: white;
+  background-color: #4fb99f;
+}
+
+button.accent {
+  color: white;
+  background-color: #112f41;
+}
+
+input {
+  font-size: 15px;
+  line-height: 27px;
+  padding: 0 5px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #333;
+  margin-top: 10px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+}
+
+/* Header */
+
+header {
+  height: 44px;
+  background-color: #4fb99f;
+  color: white;
+}
+
+header .branding {
+  text-align: center;
+  line-height: 44px;
+}
+
+header nav {
+  display: none;
+}
+
+/* Main */
+
+main {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 16px;
+  min-height: calc(100vh - 44px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 16px;
+}
+
+legend {
+  font-weight: 600;
+  text-align: left;
+}
