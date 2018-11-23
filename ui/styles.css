@@ -33,6 +33,7 @@ h3,
 h4,
 h5,
 h6,
+hr,
 p,
 ul,
 fieldset {
@@ -49,6 +50,10 @@ iframe {
 a {
   color: #112f41;
   line-height: 36px;
+}
+
+a button {
+  text-decoration: none;
 }
 
 button {
@@ -186,8 +191,26 @@ tr:nth-child(odd) {
   border-right: 1px solid #333;
 }
 
-.login-form .logo {
+.logo {
   font-size: 10em;
+  text-align: center;
+}
+
+.welcome-page h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.welcome-page hr {
+  border: none;
+  border-bottom: 1px solid #4fb99f;
+  width: 75px;
+  margin: 0 auto;
+}
+
+.welcome-page p {
+  font-size: 24px;
+  text-align: center;
 }
 
 /* LAYOUT */
