@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
+  <header id="header">
+    <div class="container fx-row">
       <a href="../index.html" class="branding">
         <i class="fa fa-balance-scale fa-lg"></i>
         <span class="brand-name">iReporter</span>
@@ -27,9 +27,10 @@
     </div>
   </header>
   <main>
+  <div class="container">
     <h1>Sign Up</h1>
-    <section>
-      <form method="post">
+    <section class="fx-col">
+      <form method="post" class="fx-row">
         <fieldset>
           <legend>Personal Information</legend>
           <input type="text" placeholder="First Name">
@@ -43,10 +44,13 @@
           <input type="email" placeholder="Email">
           <input type="password" placeholder="Password">
         </fieldset>
-        <a href="./profile.html"><button class="primary" type="submit">Sign Up</button></a>
-        <a href="./login.html">Already registered? Log in here</a>
       </form>
+      <a href="./profile.html" >
+            <button class="primary col">Sign Up</button>
+          </a>
+        <a href="./login.html" class="tc">Already registered? Log in here</a>
     </section>
+    </div>
   </main>
 </body>
 
