@@ -12,36 +12,32 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <div class="container">
-      <div class="branding">
+      <a href="../index.html" class="branding">
         <i class="fa fa-balance-scale fa-lg"></i>
         <span class="brand-name">iReporter</span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="./signup.html">Sign Up</a></li>
-          <li class="active">Log In</li>
-        </ul>
-      </nav>
+      </a>
     </div>
   </header>
   <main>
-    <h1>Log In</h1>
-    <section class="login-form">
-      <section class="logo">
-        <i class="fa fa-balance-scale"></i>
+    <div class="container">
+      <h1>Log In</h1>
+      <section class="login-form">
+        <section class="logo">
+          <i class="fa fa-balance-scale"></i>
+        </section>
+        <form method="post">
+          <fieldset>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+          </fieldset>
+          <a href="./profile.html"><button class="primary" type="submit">Log In</button></a>
+          <a href="#">Forgot your password?</a>
+          <a href="./signup.html">Don't have an account? Sign up here</a>
+        </form>
       </section>
-      <form method="post">
-        <fieldset>
-          <input type="email" placeholder="Email">
-          <input type="password" placeholder="Password">
-        </fieldset>
-        <button class="primary" type="submit">Log In</button>
-        <a href="#">Forgot your password?</a>
-        <a href="./signup.html">Don't have an account? Sign up here</a>
-      </form>
-    </section>
+    </div>
   </main>
 </body>
 
