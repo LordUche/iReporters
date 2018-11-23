@@ -12,36 +12,42 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="branding">
+  <header id="header">
+    <div class="container fx-row">
+      <a href="../index.html" class="branding">
         <i class="fa fa-balance-scale fa-lg"></i>
         <span class="brand-name">iReporter</span>
-      </div>
+      </a>
       <nav>
         <ul>
-          <li><a href="./signup.html">Sign Up</a></li>
-          <li class="active">Log In</li>
+          <li class="active">Sign Up</li>
+          <li><a href="./login.html">Log In</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <h1>Log In</h1>
-    <section class="login-form">
-      <section class="logo">
-        <i class="fa fa-balance-scale"></i>
+    <div class="container">
+      <h1>Log In</h1>
+      <section class="login-form fx-row">
+        <section class="logo col-m col-1-3l">
+          <i class="fa fa-balance-scale"></i>
+        </section>
+        <section class="fx-col col-m col-2-3l">
+        <form method="post">
+          <fieldset>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+          </fieldset>
+        </form>
+          <a href="./profile.html">
+            <button class="primary col">Log In</button>
+          </a>
+          <a href="#" class="tc">Forgot your password?</a>
+          <a href="./signup.html" class="tc">Don't have an account? Sign up here</a>
+        </section> 
       </section>
-      <form method="post">
-        <fieldset>
-          <input type="email" placeholder="Email">
-          <input type="password" placeholder="Password">
-        </fieldset>
-        <button class="primary" type="submit">Log In</button>
-        <a href="#">Forgot your password?</a>
-        <a href="./signup.html">Don't have an account? Sign up here</a>
-      </form>
-    </section>
+    </div>
   </main>
 </body>
 
