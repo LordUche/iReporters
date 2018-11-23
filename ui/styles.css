@@ -16,6 +16,17 @@ body {
   box-sizing: inherit;
 }
 
+/* ELEMENTS */
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 16px;
+  min-height: calc(100vh - 44px);
+}
+
 h1,
 h2,
 h3,
@@ -71,7 +82,7 @@ select {
   outline: none;
   border: 1px solid #333;
   background-color: #fff;
-  margin-top: 10px;
+  margin: 5px 0;
 }
 
 h1 {
@@ -88,12 +99,12 @@ form {
 }
 
 form button {
-  margin-bottom: 10px;
+  margin: 5px 0;
 }
 
 fieldset {
   border: none;
-  margin-bottom: 16px;
+  margin: 8px 0;
 }
 
 legend {
@@ -101,14 +112,15 @@ legend {
   text-align: left;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 16px;
-  min-height: calc(100vh - 44px);
+tr {
+  line-height: 24px;
 }
+
+tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+/* APP HEADER */
 
 #header {
   height: 44px;
@@ -150,6 +162,8 @@ main {
   text-decoration: none;
 }
 
+/* APP SPECIFIC UI */
+
 .card {
   background-color: #fff;
   padding: 15px 5px;
@@ -160,14 +174,6 @@ main {
 
 .card span:first-child {
   border-right: 1px solid #333;
-}
-
-tr {
-  line-height: 24px;
-}
-
-tr:nth-child(odd) {
-  background-color: #ddd;
 }
 
 .login-form .logo {
@@ -260,11 +266,11 @@ tr:nth-child(odd) {
 }
 
 .error {
-  color: #ed553b
+  color: #ed553b;
 }
 
 .gold {
-  color: #f1c232
+  color: #f1c232;
 }
 
 .silver {
@@ -319,8 +325,9 @@ tr:nth-child(odd) {
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 768px) {
+/* LARGE DISPLAY */
 
+@media only screen and (min-width: 768px) {
   .col-l {
     width: 100%;
   }
@@ -357,8 +364,9 @@ tr:nth-child(odd) {
   #header .branding {
     text-align: left;
   }
-
 }
+
+/* MOBILE DISPLAY */
 
 @media only screen and (max-width: 767px) {
   .col-m {
