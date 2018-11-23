@@ -463,6 +463,7 @@ tr:nth-child(odd) {
 /* LARGE DISPLAY */
 
 @media only screen and (min-width: 768px) {
+
   .col-l {
     width: 100%;
   }
@@ -512,6 +513,11 @@ tr:nth-child(odd) {
 /* MOBILE DISPLAY */
 
 @media only screen and (max-width: 767px) {
+
+  #header .branding {
+    color: #fff !important;
+  }
+
   .col-m {
     width: 100%;
   }
