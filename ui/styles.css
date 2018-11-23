@@ -40,6 +40,12 @@ fieldset {
   padding: 0;
 }
 
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   color: #112f41;
   line-height: 36px;
@@ -331,6 +337,50 @@ tr:nth-child(odd) {
 
 .tr {
   text-align: right;
+}
+
+.l1 {
+  line-height: 1;
+}
+
+.l5 {
+  line-height: 1.5;
+}
+
+.l2 {
+  line-height: 2;
+}
+
+.m1 {
+  margin: 5px;
+}
+
+.m2 {
+  margin: 10px;
+}
+
+.p1 {
+  padding: 5px;
+}
+
+.p2 {
+  padding: 10px;
+}
+
+.ml-1 {
+  margin-left: 5px;
+}
+
+.ml-2 {
+  margin-left: 10px;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}
+
+.mr-2 {
+  margin-right: 10px;
 }
 
 .uppercase {
